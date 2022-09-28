@@ -5,7 +5,7 @@ import myImg from "../../image/IMG_20201105_122048.jpg";
 
 const ProductList = () => {
   return (
-    <div className="">
+    <div className="sticky top-0">
       <div className="flex justify-center mt-2">
         <div className="avatar">
           <div className="w-16 rounded-full">
@@ -22,7 +22,7 @@ const ProductList = () => {
         </div>
       </div>
 
-      <div className="stats stats-vertical lg:stats-horizontal shadow-2xl bg-[#F2F4FA] ml-3 mt-3">
+      <div className="stats stats-vertical lg:stats-horizontal shadow-2xl bg-[#F2F4FA] ml-3 mt-6 mb-10">
         <div className="stat">
           <div className="stat-title">Weight</div>
           <div className="stat-value">67K</div>
@@ -37,6 +37,35 @@ const ProductList = () => {
           <div className="stat-title">Age</div>
           <div className="stat-value">22</div>
         </div>
+      </div>
+
+      <div className="ml-3">
+        <span className="font-semibold text-xl ">Add To Break</span>
+        <div className="tabs mt-6 shadow-2xl">
+          <a className="tab tab-lifted">10s</a>
+          <a className="tab tab-lifted tab-active">20s</a>
+          <a className="tab tab-lifted">30s</a>
+          <a className="tab tab-lifted tab-active">40s</a>
+          <a className="tab tab-lifted">50s</a>
+          <a className="tab tab-lifted tab-active">60s</a>
+        </div>
+      </div>
+
+      <div className="mt-8 ml-3">
+        <span className="font-semibold text-xl">Excercise Details</span>
+        <div className=" flex justify-between px-4 rounded-2xl mr-2 py-4 mt-6 bg-[#F2F4FA]">
+          <span className="font-medium text-lg">Exercise Time</span>
+          <span>Secounds</span>
+        </div>
+        <div className=" flex justify-between px-4 rounded-2xl mr-2 py-4 mt-6 bg-[#F2F4FA]">
+          <span className="font-medium text-lg">Break Time</span>
+          <span>Secounds</span>
+        </div>
+      </div>
+      <div className="flex justify-center mt-4">
+        <button className="btn btn-primary rounded-2xl px-20 ">
+          Activity Complete
+        </button>
       </div>
     </div>
   );
