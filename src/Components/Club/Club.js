@@ -1,24 +1,36 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Product from "../Product/Product";
 
 const Club = () => {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch("fakedata.json")
+      .then((res) => res.json())
+      .then((data) => setProducts(data));
+  }, []);
   return (
     <div className="grid grid-cols-4">
-      <div className="col-span-3">
-        <div className="flex items-center text-2xl">
-          <img
-            src="https://image.shutterstock.com/image-vector/gym-fitness-emblem-labels-badges-260nw-450881440.jpg"
-            alt=""
-            className="w-10"
-          />
-          <span className="text-[#5D5FEF] font-semibold ml-1">
-            FITNESS AND EXERCISE CLUB
+      <div className="col-span-3 bg-[#F2F4FA]">
+        <div className="ml-10 mt-8">
+          <div className="flex items-center text-2xl mb-4">
+            <img
+              src="https://image.shutterstock.com/image-vector/gym-fitness-emblem-labels-badges-260nw-450881440.jpg"
+              alt=""
+              className="w-10"
+            />
+            <span className="text-[#5D5FEF] font-semibold ml-1">
+              FITNESS AND EXERCISE CLUB
+            </span>
+          </div>
+          <span className="font-medium text-[1.35rem]">
+            Select Exercise Equipments
           </span>
         </div>
-        <span className="font-medium text-[1.35rem]">
-          Select Exercise Equipments
-        </span>
-        <Product></Product>
+        <div className="grid grid-cols-3">
+          {products.map((product) => (
+            <Product product={product} key={product.id}></Product>
+          ))}
+        </div>
       </div>
 
       <div className="text-2xl">
