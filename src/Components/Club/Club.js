@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Product from "../Product/Product";
+import ProductList from "../ProductList/ProductList";
 
 const Club = () => {
   const [products, setProducts] = useState([]);
@@ -33,8 +34,8 @@ const Club = () => {
         </div>
       </div>
 
-      <div className="text-2xl">
-        <h1>Equipment List</h1>
+      <div className="">
+        <ProductList></ProductList>
       </div>
     </div>
   );
