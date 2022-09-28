@@ -1,18 +1,23 @@
 import React from "react";
 
 const Product = ({ product }) => {
-  const { img } = product;
+  const { img, brandName, discription, weight, price, time } = product;
   return (
     <div className="mx-auto mt-10">
-      <div className="card w-64 bg-base-100 shadow-xl">
+      <div className="card w-72 bg-base-100 shadow-xl">
         <figure>
-          <img className="w-[256px] h-[170px]" src={img} alt="Shoes" />
+          <img className="w-[288px] h-[192px]" src={img} alt="Shoes" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
+          <h2 className="card-title">{brandName}</h2>
+          <p>{discription ? discription.slice(0, 45) + "..." : ""}</p>
+          <p className="font-medium">Weigth: {weight} kg</p>
+          <p className="font-medium">Price: ${price}</p>
+          <p className="font-medium">Time: {time} Min</p>
+          <div className="card-actions justify-center">
+            <button className="btn btn-primary rounded-2xl px-20">
+              Add To List
+            </button>
           </div>
         </div>
       </div>
