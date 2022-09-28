@@ -1,4 +1,5 @@
 import React from "react";
+import Product from "../Product/Product";
 
 const Club = () => {
   return (
@@ -17,6 +18,7 @@ const Club = () => {
         <span className="font-medium text-[1.35rem]">
           Select Exercise Equipments
         </span>
+        <Product></Product>
       </div>
 
       <div className="text-2xl">

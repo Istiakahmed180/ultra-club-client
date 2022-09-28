@@ -1,0 +1,63 @@
+[
+    {
+        "id":"1",
+        "name":"Home Fitness Kit",
+        "discription":"Multifunctional Weight Bench Barbell Squat Stand foldable Weight Bench Home Fitness Gym Equipment",
+        "img":"https://i5.walmartimages.com/asr/f62cd5db-2921-4b85-8f67-351b1b6da608.169a4a1ae0188ab9d119912237ec20de.jpeg",
+        "price":"41.81",
+        "time":"30",
+        "brandName":"Haobai",
+        "weight":"300"
+    },
+    {
+        "id":"2",
+        "name":"Treadmill Commercial Curved",
+        "discription":"china wholesale price new fitness multifunction curved manual treadmill commercial curved treadmill for gym",
+        "img":"http://cdn.shopify.com/s/files/1/0104/9926/0474/products/TMCORSAIRFR100_media-04_1024x1024.jpg?v=1577153777",
+        "price":"830.00",
+        "time":"25",
+        "brandName":"rongle",
+        "weight":"200"
+    },
+    {
+        "id":"3",
+        "name":"cheap gym supplied free weights hex rubber dumbbells",
+        "discription":"Gym Equipment Custom Wholesale Cheap Price Power Training Free Weights Fitness Hex Rubber Dumbbells",
+        "img":"https://i2-prod.mirror.co.uk/incoming/article24647197.ece/ALTERNATES/n615/0_dumbbells-uk.jpg",
+        "price":"1.00",
+        "time":"45",
+        "brandName":"Hot Life",
+        "weight":"70"
+    },
+    {
+        "id":"4",
+        "name":"Cardio Spin Cycle",
+        "discription":"Magene Top Sale Indoor Fitness Exercise Equipment Cardio Spin Cycle Gym Equip Spinning Bike",
+        "img":"https://pyxis.nymag.com/v1/imgs/9b7/05e/cca15e0beb75d690eef99220ab526ebf8e-09-bikes.rsquare.w700.jpg",
+        "price":"100.00",
+        "time":"35",
+        "brandName":"Magene",
+        "weight":"7.5"
+    },
+    {
+        "id":"5",
+        "name":"Glute Drive Machine",
+        "discription":"Glute Drive Machine Hip Thrust Online Belt Squat Glute Bridge Machine Gym Trainer Use",
+        "img":"https://www.fitkituk.com/blog/wp-content/uploads/2021/05/Hammer-Strength-GLUTE_DRIVE_052.jpg",
+        "price":"850.00",
+        "time":"25",
+        "brandName":"Ljfitness",
+        "weight":"150"
+    },
+    {
+        "id":"6",
+        "name":"Free weight integrated rack",
+        "discription":"Multi-functional Integrated Trainer Fitness Squat Rack Smith Machine Advanced Version Gym Equipment",
+        "img":"https://www.gymgear.com/app/uploads/2020/11/IMG_7995-scaled.jpg",
+        "price":"950.00",
+        "time":"40",
+        "brandName":"Zenbon",
+        "weight":"345"
+    }
+    
+]
