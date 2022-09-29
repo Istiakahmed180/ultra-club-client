@@ -19,7 +19,7 @@ const ProductList = ({ list }) => {
   const notify = () => toast("Wow Congratulations Activity Complete!");
 
   return (
-    <div className="sticky top-0">
+    <div className="sticky top-0 lg:px-0 px-8 ">
       <div className="flex justify-center mt-2">
         <div className="avatar">
           <div className="w-16 rounded-full">
@@ -36,7 +36,7 @@ const ProductList = ({ list }) => {
         </div>
       </div>
 
-      <div className="stats stats-vertical lg:stats-horizontal shadow-2xl bg-[#F2F4FA] ml-3 mt-6 mb-10">
+      <div className="stats stats-horizpntal lg:stats-horizontal shadow-2xl bg-[#F2F4FA] ml-3 mt-6 mb-10">
         <div className="stat">
           <div className="stat-title">Weight</div>
           <div className="stat-value">67K</div>

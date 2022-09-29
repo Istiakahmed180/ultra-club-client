@@ -2,7 +2,7 @@ import React from "react";
 
 const Questions = () => {
   return (
-    <div className="my-24 mx-auto">
+    <div className="my-24 lg:px-8 px-8">
       <p className="text-center font-semibold underline text-indigo-600 text-3xl">
         Queston Answer Down Position
       </p>

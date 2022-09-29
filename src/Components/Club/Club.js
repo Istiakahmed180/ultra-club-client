@@ -16,7 +16,7 @@ const Club = () => {
     setList([...list, product]);
   };
   return (
-    <div className="grid grid-cols-4">
+    <div className="grid lg:grid-cols-4 grid-cols-1">
       <div className="col-span-3 bg-[#F2F4FA]">
         <div className="ml-10 mt-8">
           <div className="flex items-center text-2xl mb-4">
@@ -29,11 +29,11 @@ const Club = () => {
               FITNESS AND EXERCISE CLUB
             </span>
           </div>
-          <span className="font-medium text-[1.35rem]">
+          <span className="font-medium text-[1.35rem] lg:px-0 px-8">
             Select Exercise Equipments
           </span>
         </div>
-        <div className="grid grid-cols-3">
+        <div className="grid lg:grid-cols-3">
           {products.map((product) => (
             <Product
               product={product}
