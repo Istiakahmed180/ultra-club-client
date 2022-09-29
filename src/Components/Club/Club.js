@@ -1,3 +1,5 @@
+import { faDrumSteelpan } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import Product from "../Product/Product";
 import ProductList from "../ProductList/ProductList";
@@ -20,12 +22,11 @@ const Club = () => {
       <div className="col-span-3 bg-[#F2F4FA]">
         <div className="ml-10 mt-8">
           <div className="flex items-center text-2xl mb-4">
-            <img
-              src="https://image.shutterstock.com/image-vector/gym-fitness-emblem-labels-badges-260nw-450881440.jpg"
-              alt=""
-              className="w-10"
-            />
-            <span className="text-[#5D5FEF] font-semibold ml-1">
+            <FontAwesomeIcon
+              className="text-[#5D5FEF] font-semibold"
+              icon={faDrumSteelpan}
+            ></FontAwesomeIcon>
+            <span className="text-[#5D5FEF] font-semibold ml-2">
               FITNESS AND EXERCISE CLUB
             </span>
           </div>

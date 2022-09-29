@@ -44,7 +44,7 @@ const ProductList = ({ list }) => {
         </div>
       </div>
 
-      <div className="stats stats-horizpntal lg:stats-horizontal shadow-2xl bg-[#F2F4FA] ml-3 mt-6 mb-10">
+      <div className="stats stats-horizpntal lg:stats-horizontal shadow-xl bg-[#F2F4FA] ml-3 mt-6 mb-10">
         <div className="stat">
           <div className="stat-title">Weight</div>
           <div className="stat-value">67K</div>
@@ -61,7 +61,7 @@ const ProductList = ({ list }) => {
         </div>
       </div>
 
-      <div className="ml-3">
+      <div className="ml-3 shadow-xl">
         <span className="font-semibold text-xl ">Add To Break</span>
         <div className="tabs mt-6 shadow-2xl">
           <button

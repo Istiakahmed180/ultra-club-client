@@ -58,6 +58,36 @@
         "time":"40",
         "brandName":"Zenbon",
         "weight":"345"
+    },
+    {
+        "id":"7",
+        "name":"Single Station Home Gym",
+        "discription":"Multi Function strength Fitness Gym Equipment Multifunction Single Station Home Gym for Body Workout",
+        "img":"https://www.merriam-webster.com/reviews/wp-content/uploads/2021/07/Bowflex-PR3000-Power-Rod.jpg",
+        "price":"235.00",
+        "time":"25",
+        "brandName":"Fly",
+        "weight":"150"
+    },
+    {
+        "id":"8",
+        "name":"abdominal machine",
+        "discription":"Home Abdominal Training Beauty Waist Abdomen Exercise Fitness Hip Lifter Gym Equipment Abs Machine",
+        "img":"https://charityshop.lk/wp-content/uploads/2020/12/6xbench-product-use-2-1.jpg",
+        "price":"52.63",
+        "time":"45",
+        "brandName":"XHS",
+        "weight":"90"
+    },
+    {
+        "id":"9",
+        "name":" Seated Leg Curl Machine",
+        "discription":"Gym Equipment Fitness & Body building Seated Leg Curl Machine for Gym",
+        "img":"https://i0.wp.com/www.strengthlog.com/wp-content/uploads/2022/04/bodybuilding-leg-workout.jpg?fit=1000%2C667&ssl=1",
+        "price":"670.63",
+        "time":"15",
+        "brandName":"MND-Minolta",
+        "weight":"270"
     }
     
 ]
