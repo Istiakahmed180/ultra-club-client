@@ -24,6 +24,41 @@ const Questions = () => {
           as necessary without cluttering your code.
         </p>
       </div>
+      <div className="my-8">
+        <p>
+          <span className="font-medium text-indigo-600">Question Number:2</span>{" "}
+          What is the difference between state and props in React?
+        </p>
+        <p className="mt-4">
+          <span className="font-medium text-indigo-600">Answer:</span> Props
+          (short for properties) are a Component's configuration. They are
+          received from above and immutable as far as the Component receiving
+          them is concerned. A Component cannot change its props, but it is
+          responsible for putting together the props of its child Components.
+          Props do not have to just be data -- callback functions may be passed
+          in as props. The state is a data structure that starts with a default
+          value when a Component mounts. It may be mutated across time, mostly
+          as a result of user events. A Component manages its own state
+          internally. Besides setting an initial state, it has no business
+          fiddling with the state of its children. You might conceptualize state
+          as private to that component.
+        </p>
+      </div>
+      <div className="my-8">
+        <p>
+          <span className="font-medium text-indigo-600">Question Number:3</span>{" "}
+          Common side effects include for useEffect?
+        </p>
+        <p className="mt-4">
+          <span className="font-medium text-indigo-600">Answer:</span> 1. Making
+          a request to an API for data from a backend server.
+          <br />
+          2.To interact with browser APIs (that is, to use document or window
+          directly)
+          <br />
+          3.Using unpredictable timing functions like setTimeout or setInterval.
+        </p>
+      </div>
     </div>
   );
 };
