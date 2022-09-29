@@ -1,6 +1,7 @@
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import myImg from "../../image/IMG_20201105_122048.jpg";
 
 const ProductList = ({ list }) => {
@@ -8,6 +9,9 @@ const ProductList = ({ list }) => {
   for (const product of list) {
     time = time + parseInt(product.time);
   }
+
+  const notify = () => toast("Wow Congratulations Activity Complete!");
+
   return (
     <div className="sticky top-0">
       <div className="flex justify-center mt-2">
@@ -46,12 +50,12 @@ const ProductList = ({ list }) => {
       <div className="ml-3">
         <span className="font-semibold text-xl ">Add To Break</span>
         <div className="tabs mt-6 shadow-2xl">
-          <a className="tab tab-lifted">10s</a>
-          <a className="tab tab-lifted tab-active">20s</a>
-          <a className="tab tab-lifted">30s</a>
-          <a className="tab tab-lifted tab-active">40s</a>
-          <a className="tab tab-lifted">50s</a>
-          <a className="tab tab-lifted tab-active">60s</a>
+          <span className="tab tab-lifted">10s</span>
+          <button className="tab tab-lifted tab-active">20s</button>
+          <button className="tab tab-lifted">30s</button>
+          <button className="tab tab-lifted tab-active">40s</button>
+          <button className="tab tab-lifted">50s</button>
+          <button className="tab tab-lifted tab-active">60s</button>
         </div>
       </div>
 
@@ -67,9 +71,10 @@ const ProductList = ({ list }) => {
         </div>
       </div>
       <div className="flex justify-center mt-4">
-        <button className="btn btn-primary rounded-2xl px-20 ">
+        <button onClick={notify} className="btn btn-primary rounded-2xl px-20 ">
           Activity Complete
         </button>
+        <ToastContainer></ToastContainer>
       </div>
     </div>
   );
