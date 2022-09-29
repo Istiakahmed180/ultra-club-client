@@ -1,6 +1,6 @@
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import myImg from "../../image/IMG_20201105_122048.jpg";
@@ -12,8 +12,16 @@ const ProductList = ({ list }) => {
     time = time + parseInt(product.time);
   }
 
+  useEffect(() => {
+    const data = localStorage.getItem("break");
+    if (data !== null) {
+      setBreaks(data);
+    }
+  }, []);
+
   const handleBreakButton = (e) => {
     setBreaks(e);
+    localStorage.setItem("break", e);
   };
 
   const notify = () => toast("Wow Congratulations Activity Complete!");

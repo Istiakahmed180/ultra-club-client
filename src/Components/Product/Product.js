@@ -6,11 +6,11 @@ const Product = ({ product, handleAddToButton }) => {
     <div className="mx-auto mt-10">
       <div className="card w-72 bg-base-100 shadow-xl">
         <figure>
-          <img className="w-[288px] h-[192px]" src={img} alt="Shoes" />
+          <img className="w-[288px] h-[192px]" src={img} alt="" />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{brandName}</h2>
-          <p>{discription ? discription.slice(0, 45) + "..." : ""}</p>
+          {/* <p>{discription ? discription.slice(0, 25) + "..." : ""}</p> */}
           <p className="font-medium">Weigth: {weight} kg</p>
           <p className="font-medium">Price: ${price}</p>
           <p className="font-medium">Time: {time} Min</p>
