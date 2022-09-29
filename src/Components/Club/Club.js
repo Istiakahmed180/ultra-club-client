@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Product from "../Product/Product";
 import ProductList from "../ProductList/ProductList";
+import Questions from "../Questions/Questions";
 
 const Club = () => {
   const [products, setProducts] = useState([]);
@@ -41,6 +42,7 @@ const Club = () => {
             ></Product>
           ))}
         </div>
+        <Questions></Questions>
       </div>
 
       <div className="">
