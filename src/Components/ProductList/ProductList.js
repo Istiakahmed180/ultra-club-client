@@ -1,14 +1,20 @@
 import { faLocationPin } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import myImg from "../../image/IMG_20201105_122048.jpg";
 
 const ProductList = ({ list }) => {
+  const [breaks, setBreaks] = useState("");
   let time = 0;
   for (const product of list) {
     time = time + parseInt(product.time);
   }
+
+  const handleBreakButton = (e) => {
+    setBreaks(e);
+  };
 
   const notify = () => toast("Wow Congratulations Activity Complete!");
 
@@ -50,12 +56,41 @@ const ProductList = ({ list }) => {
       <div className="ml-3">
         <span className="font-semibold text-xl ">Add To Break</span>
         <div className="tabs mt-6 shadow-2xl">
-          <span className="tab tab-lifted">10s</span>
-          <button className="tab tab-lifted tab-active">20s</button>
-          <button className="tab tab-lifted">30s</button>
-          <button className="tab tab-lifted tab-active">40s</button>
-          <button className="tab tab-lifted">50s</button>
-          <button className="tab tab-lifted tab-active">60s</button>
+          <button
+            onClick={(e) => handleBreakButton(e.target.value)}
+            className="tab tab-lifted"
+            value="10"
+          >
+            10m
+          </button>
+          <button
+            onClick={(e) => handleBreakButton(e.target.value)}
+            className="tab tab-lifted tab-active"
+            value="20"
+          >
+            20m
+          </button>
+          <button
+            onClick={(e) => handleBreakButton(e.target.value)}
+            className="tab tab-lifted"
+            value="30"
+          >
+            30m
+          </button>
+          <button
+            onClick={(e) => handleBreakButton(e.target.value)}
+            className="tab tab-lifted tab-active"
+            value="40"
+          >
+            40m
+          </button>
+          <button
+            onClick={(e) => handleBreakButton(e.target.value)}
+            className="tab tab-lifted"
+            value="50"
+          >
+            50m
+          </button>
         </div>
       </div>
 
@@ -67,7 +102,7 @@ const ProductList = ({ list }) => {
         </div>
         <div className=" flex justify-between px-4 rounded-2xl mr-2 py-4 mt-6 bg-[#F2F4FA]">
           <span className="font-medium text-lg">Break Time</span>
-          <span>Secounds</span>
+          <span>{breaks} Minitues</span>
         </div>
       </div>
       <div className="flex justify-center mt-4">
