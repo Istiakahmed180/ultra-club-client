@@ -4,11 +4,16 @@ import ProductList from "../ProductList/ProductList";
 
 const Club = () => {
   const [products, setProducts] = useState([]);
+  const [list, setList] = useState([]);
   useEffect(() => {
     fetch("fakedata.json")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
+
+  const handleAddToButton = (product) => {
+    setList([...list, product]);
+  };
   return (
     <div className="grid grid-cols-4">
       <div className="col-span-3 bg-[#F2F4FA]">
@@ -29,13 +34,17 @@ const Club = () => {
         </div>
         <div className="grid grid-cols-3">
           {products.map((product) => (
-            <Product product={product} key={product.id}></Product>
+            <Product
+              product={product}
+              key={product.id}
+              handleAddToButton={handleAddToButton}
+            ></Product>
           ))}
         </div>
       </div>
 
       <div className="">
-        <ProductList></ProductList>
+        <ProductList list={list}></ProductList>
       </div>
     </div>
   );

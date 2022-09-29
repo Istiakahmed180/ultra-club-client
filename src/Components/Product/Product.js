@@ -1,6 +1,6 @@
 import React from "react";
 
-const Product = ({ product }) => {
+const Product = ({ product, handleAddToButton }) => {
   const { img, brandName, discription, weight, price, time } = product;
   return (
     <div className="mx-auto mt-10">
@@ -15,7 +15,10 @@ const Product = ({ product }) => {
           <p className="font-medium">Price: ${price}</p>
           <p className="font-medium">Time: {time} Min</p>
           <div className="card-actions justify-center">
-            <button className="btn btn-primary rounded-2xl px-20">
+            <button
+              onClick={() => handleAddToButton(product)}
+              className="btn btn-primary rounded-2xl px-20"
+            >
               Add To List
             </button>
           </div>

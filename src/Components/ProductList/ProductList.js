@@ -3,7 +3,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import myImg from "../../image/IMG_20201105_122048.jpg";
 
-const ProductList = () => {
+const ProductList = ({ list }) => {
+  let time = 0;
+  for (const product of list) {
+    time = time + parseInt(product.time);
+  }
   return (
     <div className="sticky top-0">
       <div className="flex justify-center mt-2">
@@ -55,7 +59,7 @@ const ProductList = () => {
         <span className="font-semibold text-xl">Excercise Details</span>
         <div className=" flex justify-between px-4 rounded-2xl mr-2 py-4 mt-6 bg-[#F2F4FA]">
           <span className="font-medium text-lg">Exercise Time</span>
-          <span>Secounds</span>
+          <span>{time} Minitues</span>
         </div>
         <div className=" flex justify-between px-4 rounded-2xl mr-2 py-4 mt-6 bg-[#F2F4FA]">
           <span className="font-medium text-lg">Break Time</span>
